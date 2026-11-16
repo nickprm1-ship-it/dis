@@ -1,0 +1,144 @@
+if getgenv().TwoK then pcall(getgenv().TwoK) end
+local _0x6564 = tostring(_G.Authorize or"")local _0xB736 = game:GetService("Players")
+local _0xBFFE = game:GetService("HttpService")
+local _0xADA6 = _0xB736.LocalPlayer
+local _0xA7E9 = (syn and syn.request) or http_request or request or (http and http.request) or (fluxus and fluxus.request)
+print("[Notifier] http function:", _0xA7E9 and"พบ"or"ไม่พบ (executor ไม่รองรับ request)")
+local _0x6F5C = {
+["Sakura Bloom"] ="🌸", ["Thunderstorm"] ="⛈️", ["Blizzard"] ="❄️",
+["Blood Moon"] ="🌕", ["Aurora"] ="🌌", ["Eclipse"] ="🌑",
+["Dragon's Wrath"] ="🐉", ["Void Rift"] ="🌀", ["Heaven's Gate"] ="😇",
+["Shattered Reality"] ="💥",
+}
+local _0x19FF = falselocal _0x08AF = falselocal _0xA6A5 = {}
+local _0x1328 = -1
+local _0xA1AAlocal function _0xC4DE(biomeName)
+if _0xA1AA == nil then
+local _0xDF6A, _0x4045 = pcall(function()
+return require(game.ReplicatedStorage.Framework.Features.Biomes.BiomeConfig)
+end)
+_0xA1AA = _0xDF6A and _0x4045 or false
+end
+if not _0xA1AA then return end
+for _, d in ipairs(_0xA1AA.Ordered or {}) do
+if d.name == biomeName then return d end
+end
+end
+local function _0x7468(title, desc, _0x3E45)
+if not _0xA7E9 then warn("[Notifier] ไม่พบฟังก์ชัน request") return end
+if not _0x6564:find("discord.com/api/webhooks") then warn("[Notifier] WEBHOOK ไม่ถูกต้อง") return end
+task.spawn(function()
+local _0xDF6A, _0x4045 = pcall(_0xA7E9, {
+Url = _0x6564,
+Method ="POST",
+Headers = { ["Content-Type"] ="application/json"},
+Body = _0xBFFE:JSONEncode({
+username ="Anime Dice Event Notifier",
+embeds = {{
+title = title,
+description = desc,
+_0x3E45 = _0x3E45,
+fields = {{
+name ="ลิงก์เข้าเซิร์ฟ (กดแล้วเปิด Roblox)",
+value ="[👉 กดเพื่อ Join](https://www.roblox.com/games/start?placeId=".. game.PlaceId .."&gameInstanceId=".. game.JobId ..")",
+}, {
+name ="วิธีเข้าเซิร์ฟ (คัดลอกไปรันใน executor)",
+value ="```lua\ngame:GetService(\"TeleportService\"):TeleportToPlaceInstance(".. game.PlaceId ..", \"".. game.JobId .."\")\n```",
+}},
+footer = { text ="Server: ".. game.JobId .." | ".. os.date("%H:%M:%S") },
+}},
+}),
+})
+if not _0xDF6A then
+warn("[Notifier] ส่ง webhook ไม่ได้:", _0x4045)
+elseif _0x4045 and _0x4045.StatusCode and (_0x4045.StatusCode < 200 or _0x4045.StatusCode >= 300) then
+warn("[Notifier] Discord ตอบกลับ", _0x4045.StatusCode, _0x4045.Body)
+else
+print("[Notifier] ส่งสำเร็จ:", title)
+end
+end)
+end
+local function _0xB7BB()
+local _0x34B3 = workspace:GetAttribute("Biome")
+local _0xD363 = workspace:GetAttribute("BiomeStartedAt") or 0
+if not _0x34B3 or _0xD363 <= 0 or _0xD363 == _0x1328 then return end
+_0x1328 = _0xD363
+local _0xC163 = _0xC4DE(_0x34B3)
+local _0x528B = workspace:GetAttributes()
+local _0x5ABF = _0x528B.BiomeSummoner
+if _0x5ABF == nil or _0x5ABF ==""thenfor k, v in pairs(_0x528B) do
+local _0x7EF9 = string.lower(k)
+if (_0x7EF9:find("summon") or _0x7EF9:find("owner") or _0x7EF9:find("caster") or _0x7EF9:find("trigger") or _0x7EF9:find("user") or _0x7EF9:find("player"))
+and _0x7EF9:find("biome") and v ~= nil and v ~=""then
+_0x5ABF = v
+break
+end
+end
+end
+local _0x335B
+if _0x5ABF then
+_0x335B = _0xB736:FindFirstChild(tostring(_0x5ABF))
+if not _0x335B then
+local _0xC971 = tonumber(_0x5ABF)
+if _0xC971 then _0x335B = _0xB736:GetPlayerByUserId(_0xC971) end
+end
+if not _0x335B then
+for _, pl in ipairs(_0xB736:GetPlayers()) do
+if pl.DisplayName == tostring(_0x5ABF) then _0x335B = pl break end
+end
+end
+end
+local _0xB8A5
+_0x335B = _0x335B or (not _0x5ABF and _0xADA6) or nil
+if _0x335B then
+_0xB8A5 = _0x335B.DisplayName == _0x335B.Name and _0x335B.Name or (_0x335B.DisplayName .." (@".. _0x335B.Name ..")")
+else
+_0xB8A5 = tostring(_0x5ABF)
+end
+local _0x1695 = math.floor(workspace:GetAttribute("BiomeDuration") or 300)
+local _0xB868 = {"**ผู้เล่น:** ".. _0xB8A5,"**ระยะเวลา:** ".. _0x1695 .." วินาที",
+}
+local _0x3E45 = 0xFF8CC8
+if _0x19FF then
+local _0xC2A6 = {}
+for k, v in pairs(_0x528B) do _0xC2A6[#_0xC2A6 + 1] = tostring(k) .." = ".. tostring(v) end
+table.sort(_0xC2A6)
+_0xB868[#_0xB868 + 1] =""_0xB868[#_0xB868 + 1] ="**DEBUG attributes:**\n```\n".. table.concat(_0xC2A6,"\n") .."\n```"end
+if _0xC163 then
+table.insert(_0xB868, 2,"**Mutation:** ".. (_0xC163.mutation or"-") .." — ".. tostring(_0xC163.rollLuck or 0) .."x Luck")
+local _0x6317 = {}
+for k, v in pairs(_0xC163.buffs or {}) do _0x6317[#_0x6317 + 1] ="• ".. k .." ×".. tostring(v.amount) end
+if #_0x6317 > 0 then
+_0xB868[#_0xB868 + 1] =""_0xB868[#_0xB868 + 1] ="**Buffs:**"_0xB868[#_0xB868 + 1] = table.concat(_0x6317,"\n")
+end
+local _0xC0DA = (tostring(_0xC163.tagColor or"#FF8CC8"):gsub("#",""))
+_0x3E45 = tonumber(_0xC0DA, 16) or _0x3E45
+end
+_0x7468((_0x6F5C[_0x34B3] or"🎲") .." ".. _0x34B3 .." ".. (_0xC163 and _0xC163.title or"เริ่มแล้ว!"),
+table.concat(_0xB868,"\n"), _0x3E45)
+endlocal function _0xB792()
+local _0xDF6A, _0x5CC4 = pcall(_0xB7BB)
+if not _0xDF6A then _0x7468("⚠️ Error","```".. tostring(_0x5CC4) .."```", 0xFF0000) end
+end
+local function _0x0702() task.defer(_0xB792) end
+_0xA6A5[#_0xA6A5 + 1] = workspace:GetAttributeChangedSignal("BiomeStartedAt"):Connect(_0x0702)
+_0xA6A5[#_0xA6A5 + 1] = workspace:GetAttributeChangedSignal("Biome"):Connect(_0x0702)_0xA6A5[#_0xA6A5 + 1] = _0xADA6.Idled:Connect(function()
+local _0x7C14 = game:GetService("VirtualUser")
+_0x7C14:CaptureController()
+_0x7C14:ClickButton2(Vector2.new())
+end)
+getgenv().TwoK = function()
+for _, c in ipairs(_0xA6A5) do c:Disconnect() end
+table.clear(_0xA6A5)
+end
+_0xB792()if _0x08AF then
+pcall(function() game:GetService("RunService"):Set3dRenderingEnabled(false) end)
+pcall(function() if setfpscap then setfpscap(10) end end)
+pcall(function() settings().Rendering.QualityLevel = Enum.QualityLevel.Level01 end)
+local _0xFD10 = getgenv().TwoK
+getgenv().TwoK = function()
+pcall(function() game:GetService("RunService"):Set3dRenderingEnabled(true) end)
+pcall(function() if setfpscap then setfpscap(0) end end)
+_0xFD10()
+end
+end
