@@ -1,7 +1,6 @@
--- Anime Dice Event Notifier (เวอร์ชันเบา: ไม่มี UI, ไม่มี polling)
 if getgenv().TwoK then pcall(getgenv().TwoK) end
 
-local WEBHOOK = tostring(_G.Authorize or "") -- ใส่ webhook ที่ _G.Authorize ก่อนรัน loader
+local WEBHOOK = tostring(_G.Authorize or "")
 
 local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
@@ -20,7 +19,7 @@ local DEBUG = false -- เปิดเป็น true ถ้าอยากดู
 local SAVE_RESOURCE = false -- true = ปิดการเรนเดอร์ 3D + จำกัด FPS ตอนปล่อยเครื่องทิ้งไว้ (หน้าจอจะดำ) ลด CPU/GPU/แรมได้มาก
 local conns = {}
 local lastStarted = -1
-local cfg -- โหลดตอนใช้งานจริงครั้งแรกเท่านั้น
+local cfg
 
 local function getInfo(biomeName)
     if cfg == nil then
