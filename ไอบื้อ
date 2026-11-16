@@ -1,0 +1,158 @@
+if getgenv().TwoK then pcall(getgenv().TwoK) end
+local _ooiD0hzeD = tostring(_G.Authorize or (function()local _k=218;local _t={};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()) 
+local _jqubztWN = game:GetService((function()local _k=120;local _t={40,20,25,1,29,10,11};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)())
+local _IaurfL = game:GetService((function()local _k=57;local _t={113,77,77,73,106,92,75,79,80,90,92};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)())
+local _PiJlbe = _jqubztWN._PiJlbe
+local _RUQGIbXC = (syn and syn.request) or http_request or request or (http and http.request) or (fluxus and fluxus.request)
+print((function()local _k=77;local _t={22,3,34,57,36,43,36,40,63,16,109,37,57,57,61,109,43,56,35,46,57,36,34,35,119};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(), _RUQGIbXC and (function()local _k=108;local _t={3698,3702};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() or (function()local _k=139;local _t={3791,3754,3779,3733,3729,171,163,238,243,238,232,254,255,228,249,171,3791,3754,3779,3752,3750,3724,3752,3770,3729,171,249,238,250,254,238,248,255,162};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)())
+local _OCBknX0E = {
+[(function()local _k=112;local _t={35,17,27,5,2,17,80,50,28,31,31,29};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()] = (function()local _k=99;local _t={55391,57179};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(), [(function()local _k=62;local _t={106,86,75,80,90,91,76,77,74,81,76,83};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()] = (function()local _k=75;local _t={9859,65092};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(), [(function()local _k=201;local _t={139,165,160,179,179,168,187,173};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()] = (function()local _k=169;local _t={10221,65190};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(),
+[(function()local _k=195;local _t={129,175,172,172,167,227,142,172,172,173};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()] = (function()local _k=54;local _t={55306,57123};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(), [(function()local _k=78;local _t={15,59,60,33,60,47};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()] = (function()local _k=201;local _t={55541,57285};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(), [(function()local _k=179;local _t={246,208,223,218,195,192,214};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()] = (function()local _k=158;local _t={55458,57231};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(),
+[(function()local _k=88;local _t={28,42,57,63,55,54,127,43,120,15,42,57,44,48};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()] = (function()local _k=61;local _t={55296,56372};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(), [(function()local _k=184;local _t={238,215,209,220,152,234,209,222,204};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()] = (function()local _k=206;local _t={55538,57294};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(), [(function()local _k=99;local _t={43,6,2,21,6,13,68,16,67,36,2,23,6};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()] = (function()local _k=141;local _t={55472,56970};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(),
+[(function()local _k=32;local _t={115,72,65,84,84,69,82,69,68,0,114,69,65,76,73,84,89};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()] = (function()local _k=179;local _t={55438,56342};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(),
+}
+local _ozNhICOJ = false 
+local _vvteqtqAu = false 
+local _qI1AUY = {}
+local _OMZhaDBV = -(674+(-673))
+local _kMvEGg 
+local function getInfo(biomeName)
+if _kMvEGg == nil then
+local _S1XJKIl, res = pcall(function()
+return require(game.ReplicatedStorage.Framework.Features.Biomes.BiomeConfig)
+end)
+_kMvEGg = _S1XJKIl and res or false
+end
+if not _kMvEGg then return end
+for _, d in ipairs(_kMvEGg.Ordered or {}) do
+if d.name == biomeName then return d end
+end
+end
+local function send(title, desc, _EAhgjG)
+if not _RUQGIbXC then warn((function()local _k=143;local _t={212,193,224,251,230,233,230,234,253,210,175,3787,3758,3783,3729,3733,3728,3774,3720,3726,3779,3717,3774,3734,175,253,234,254,250,234,252,251};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()) return end
+if not _ooiD0hzeD:find((function()local _k=148;local _t={240,253,231,247,251,230,240,186,247,251,249,187,245,228,253,187,227,241,246,252,251,251,255,231};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()) then warn((function()local _k=167;local _t={252,233,200,211,206,193,206,194,213,250,135,240,226,229,239,232,232,236,135,3811,3718,3823,3761,3742,3750,3762,3822,3722,3744};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()) return end
+task.spawn(function()
+local _S1XJKIl, res = pcall(_RUQGIbXC, {
+Url = _ooiD0hzeD,
+Method = (function()local _k=27;local _t={75,84,72,79};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(),
+Headers = { [(function()local _k=69;local _t={6,42,43,49,32,43,49,104,17,60,53,32};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()] = (function()local _k=192;local _t={161,176,176,172,169,163,161,180,169,175,174,239,170,179,175,174};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() },
+Body = _IaurfL:JSONEncode({
+username = (function()local _k=106;local _t={43,4,3,7,15,74,46,3,9,15,74,47,28,15,4,30,74,36,5,30,3,12,3,15,24};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(),
+embeds = {{
+title = title,
+description = desc,
+_EAhgjG = _EAhgjG,
+fields = {{
+name = (function()local _k=69;local _t={3680,3697,3650,3652,3593,3589,3655,3596,3703,3589,3662,3697,3686,3593,3674,101,109,3652,3665,3588,3680,3596,3682,3589,3678,3697,3665,101,23,42,39,41,42,61,108};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(),
+value = (function()local _k=103;local _t={60,55386,56366,71,3686,3699,3623,3705,3664,3631,3658,71,45,8,14,9,58,79,15,19,19,23,20,93,72,72,16,16,16,73,21,8,5,11,8,31,73,4,8,10,72,0,6,10,2,20,72,20,19,6,21,19,88,23,11,6,4,2,46,3,90};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() .. game.PlaceId .. (function()local _k=80;local _t={118,55,49,61,53,25,62,35,36,49,62,51,53,25,52,109};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() .. game.JobId .. (function()local _k=66;local _t={107};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(),
+}, {
+name = (function()local _k=182;local _t={3729,3714,3758,3715,3830,3764,3839,3716,3830,3773,3714,3733,3834,3753,150,158,3762,3719,3746,3731,3739,3767,3826,3757,3733,3719,3759,3829,3759,150,211,206,211,213,195,194,217,196,159};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(),
+value = (function()local _k=70;local _t={38,38,38,42,51,39,76,33,39,43,35,124,1,35,50,21,35,52,48,47,37,35,110,100,18,35,42,35,54,41,52,50,21,35,52,48,47,37,35,100,111,124,18,35,42,35,54,41,52,50,18,41,22,42,39,37,35,15,40,53,50,39,40,37,35,110};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() .. game.PlaceId .. (function()local _k=112;local _t={92,80,82};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() .. game.JobId .. (function()local _k=54;local _t={20,31,60,86,86,86};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(),
+}},
+footer = { text = (function()local _k=200;local _t={155,173,186,190,173,186,242,232};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() .. game.JobId .. (function()local _k=195;local _t={227,191,227};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() .. os.date((function()local _k=93;local _t={120,21,103,120,16,103,120,14};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()) },
+}},
+}),
+})
+if not _S1XJKIl then
+warn((function()local _k=170;local _t={241,228,197,222,195,204,195,207,216,247,138,3712,3810,3757,138,221,207,200,194,197,197,193,138,3822,3723,3810,3822,3774,3811,144};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(), res)
+elseif res and res.StatusCode and (res.StatusCode < (306+(-106)) or res.StatusCode >= (499+(-199))) then
+warn((function()local _k=219;local _t={128,149,180,175,178,189,178,190,169,134,251,159,178,168,184,180,169,191,251,3790,3830,3777,3802,3838,3818,3777};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(), res.StatusCode, res.Body)
+else
+print((function()local _k=94;local _t={5,16,49,42,55,56,55,59,44,3,126,3700,3606,3673,3700,3693,3614,3709,3609,3670,100};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(), title)
+end
+end)
+end
+local function check()
+local _NQMnuOB = workspace:GetAttribute((function()local _k=82;local _t={16,59,61,63,55};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)())
+local _uOXqJpk = workspace:GetAttribute((function()local _k=112;local _t={50,25,31,29,21,35,4,17,2,4,21,20,49,4};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()) or (407+(-407))
+if not _NQMnuOB or _uOXqJpk <= (453+(-453)) or _uOXqJpk == _OMZhaDBV then return end
+_OMZhaDBV = _uOXqJpk
+local _RddRGClW = getInfo(_NQMnuOB)
+local _SHfBTceF = workspace:GetAttributes()
+local _X1ItSIsFG = _SHfBTceF.BiomeSummoner
+if _X1ItSIsFG == nil or _X1ItSIsFG == (function()local _k=97;local _t={};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() then
+for k, v in pairs(_SHfBTceF) do
+local _VtfFKC0 = string.lower(k)
+if (_VtfFKC0:find((function()local _k=52;local _t={71,65,89,89,91,90};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()) or _VtfFKC0:find((function()local _k=112;local _t={31,7,30,21,2};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()) or _VtfFKC0:find((function()local _k=104;local _t={11,9,27,28,13,26};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()) or _VtfFKC0:find((function()local _k=26;local _t={110,104,115,125,125,127,104};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()) or _VtfFKC0:find((function()local _k=50;local _t={71,65,87,64};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()) or _VtfFKC0:find((function()local _k=104;local _t={24,4,9,17,13,26};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()))
+and _VtfFKC0:find((function()local _k=115;local _t={17,26,28,30,22};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()) and v ~= nil and v ~= (function()local _k=74;local _t={};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() then
+_X1ItSIsFG = v
+break
+end
+end
+end
+local _VTbdLUFg0
+if _X1ItSIsFG then
+_VTbdLUFg0 = _jqubztWN:FindFirstChild(tostring(_X1ItSIsFG))
+if not _VTbdLUFg0 then
+local _lbm1IOi = tonumber(_X1ItSIsFG)
+if _lbm1IOi then _VTbdLUFg0 = _jqubztWN:GetPlayerByUserId(_lbm1IOi) end
+end
+if not _VTbdLUFg0 then
+for _, pl in ipairs(_jqubztWN:GetPlayers()) do
+if pl.DisplayName == tostring(_X1ItSIsFG) then _VTbdLUFg0 = pl break end
+end
+end
+end
+local _rZqyCNL
+_VTbdLUFg0 = _VTbdLUFg0 or (not _X1ItSIsFG and _PiJlbe) or nil
+if _VTbdLUFg0 then
+_rZqyCNL = _VTbdLUFg0.DisplayName == _VTbdLUFg0.Name and _VTbdLUFg0.Name or (_VTbdLUFg0.DisplayName .. (function()local _k=33;local _t={1,9,97};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() .. _VTbdLUFg0.Name .. (function()local _k=137;local _t={160};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)())
+else
+_rZqyCNL = tostring(_X1ItSIsFG)
+end
+local _OCrbKFFOn = math.floor(workspace:GetAttribute((function()local _k=56;local _t={122,81,87,85,93,124,77,74,89,76,81,87,86};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()) or (695+(-395)))
+local _sODLkrRfJ = {
+(function()local _k=30;local _t={52,52,3586,3623,3671,3678,3643,3670,3591,36,52,52,62};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() .. _rZqyCNL,
+(function()local _k=43;local _t={1,1,3592,3611,3593,3611,3691,3596,3598,3609,17,1,1,11};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() .. _OCrbKFFOn .. (function()local _k=219;local _t={251,3836,3823,3778,3817,3788,3822};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(),
+}
+local _EAhgjG = (607+(16747113))
+if _ozNhICOJ then
+local _KNmTOyR = {}
+for k, v in pairs(_SHfBTceF) do _KNmTOyR[#_KNmTOyR + (734+(-733))] = tostring(k) .. (function()local _k=46;local _t={14,19,14};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() .. tostring(v) end
+table.sort(_KNmTOyR)
+_sODLkrRfJ[#_sODLkrRfJ + (82+(-81))] = (function()local _k=94;local _t={};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()
+_sODLkrRfJ[#_sODLkrRfJ + (861+(-860))] = (function()local _k=196;local _t={238,238,128,129,134,145,131,228,165,176,176,182,173,166,177,176,161,183,254,238,238,206,164,164,164,206};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() .. table.concat(_KNmTOyR, (function()local _k=134;local _t={140};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()) .. (function()local _k=116;local _t={126,20,20,20};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()
+end
+if _RddRGClW then
+table.insert(_sODLkrRfJ, (572+(-570)), (function()local _k=120;local _t={82,82,53,13,12,25,12,17,23,22,66,82,82,88};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() .. (_RddRGClW.mutation or (function()local _k=117;local _t={88};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()) .. (function()local _k=200;local _t={232,8412,232};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() .. tostring(_RddRGClW.rollLuck or (547+(-547))) .. (function()local _k=150;local _t={238,182,218,227,245,253};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)())
+local _CfRtIMJ1Q = {}
+for k, v in pairs(_RddRGClW._CfRtIMJ1Q or {}) do _CfRtIMJ1Q[#_CfRtIMJ1Q + (98+(-97))] = (function()local _k=77;local _t={8303,109};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() .. k .. (function()local _k=56;local _t={24,239};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() .. tostring(v.amount) end
+if #_CfRtIMJ1Q > (218+(-218)) then
+_sODLkrRfJ[#_sODLkrRfJ + (617+(-616))] = (function()local _k=70;local _t={};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()
+_sODLkrRfJ[#_sODLkrRfJ + (626+(-625))] = (function()local _k=68;local _t={110,110,6,49,34,34,55,126,110,110};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()
+_sODLkrRfJ[#_sODLkrRfJ + (272+(-271))] = table.concat(_CfRtIMJ1Q, (function()local _k=198;local _t={204};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)())
+end
+local _suTyEgb = (tostring(_RddRGClW.tagColor or (function()local _k=130;local _t={161,196,196,186,193,193,186};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()):gsub((function()local _k=217;local _t={250};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(), (function()local _k=24;local _t={};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()))
+_EAhgjG = tonumber(_suTyEgb, (485+(-469))) or _EAhgjG
+end
+send((_OCBknX0E[_NQMnuOB] or (function()local _k=164;local _t={55448,57110};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()) .. (function()local _k=163;local _t={131};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() .. _NQMnuOB .. (function()local _k=55;local _t={23};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() .. (_RddRGClW and _RddRGClW.title or (function()local _k=111;local _t={3631,3660,3675,3623,3662,3630,3658,3622,3656,78};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()),
+table.concat(_sODLkrRfJ, (function()local _k=126;local _t={116};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()), _EAhgjG)
+end
+local function safeCheck()
+local _S1XJKIl, err = pcall(check)
+if not _S1XJKIl then send((function()local _k=58;local _t={9882,65077,26,127,72,72,85,72};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(), (function()local _k=109;local _t={13,13,13};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)() .. tostring(err) .. (function()local _k=162;local _t={194,194,194};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)(), (495+(16711185))) end
+end
+local function onChange() task.defer(safeCheck) end
+_qI1AUY[#_qI1AUY + (262+(-261))] = workspace:GetAttributeChangedSignal((function()local _k=187;local _t={249,210,212,214,222,232,207,218,201,207,222,223,250,207};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()):Connect(onChange)
+_qI1AUY[#_qI1AUY + (253+(-252))] = workspace:GetAttributeChangedSignal((function()local _k=98;local _t={32,11,13,15,7};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()):Connect(onChange)
+_qI1AUY[#_qI1AUY + (816+(-815))] = _PiJlbe.Idled:Connect(function()
+local _cRsaVO = game:GetService((function()local _k=185;local _t={239,208,203,205,204,216,213,236,202,220,203};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)())
+_cRsaVO:CaptureController()
+_cRsaVO:ClickButton2(Vector2.new())
+end)
+getgenv().TwoK = function()
+for _, c in ipairs(_qI1AUY) do c:Disconnect() end
+table.clear(_qI1AUY)
+end
+safeCheck() 
+if _vvteqtqAu then
+pcall(function() game:GetService((function()local _k=129;local _t={211,244,239,210,228,243,247,232,226,228};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()):Set3dRenderingEnabled(false) end)
+pcall(function() if setfpscap then setfpscap((949+(-939))) end end)
+pcall(function() settings().Rendering.QualityLevel = Enum.QualityLevel.Level01 end)
+local _FXFOSn0R = getgenv().TwoK
+getgenv().TwoK = function()
+pcall(function() game:GetService((function()local _k=200;local _t={154,189,166,155,173,186,190,161,171,173};for _i=1,#_t do _t[_i]=_t[_i]~_k end;return string.char(table.unpack(_t))end)()):Set3dRenderingEnabled(true) end)
+pcall(function() if setfpscap then setfpscap((775+(-775))) end end)
+_FXFOSn0R()
+end
+end
