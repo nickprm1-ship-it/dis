@@ -51,7 +51,7 @@ local function send(title, desc, color)
                 color = color,
                 fields = {{
                     name = "ลิงก์เข้าเซิร์ฟ (กดแล้วเปิด Roblox)",
-                    value = "[👉 กดเพื่อ Join](roblox://experiences/start?placeId=" .. game.PlaceId .. "&gameInstanceId=" .. game.JobId .. ")",
+                    value = "คัดลอกไปวางในช่อง URL ของเบราว์เซอร์ (ไม่ใช่ช่องค้นหา) แล้วกด Enter:\n```\nroblox://experiences/start?placeId=" .. game.PlaceId .. "&gameInstanceId=" .. game.JobId .. "\n```",
                 }, {
                     name = "วิธีเข้าเซิร์ฟ (คัดลอกไปรันใน executor)",
                     value = "```lua\ngame:GetService(\"TeleportService\"):TeleportToPlaceInstance(" .. game.PlaceId .. ", \"" .. game.JobId .. "\")\n```",
