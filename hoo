@@ -1,28 +1,27 @@
-tifier · LUA
 -- Anime Dice Event Notifier (เวอร์ชันเบา: ไม่มี UI, ไม่มี polling)
 if getgenv().TwoK then pcall(getgenv().TwoK) end
- 
+
 local WEBHOOK = tostring(_G.Authorize or "") -- ใส่ webhook ที่ _G.Authorize ก่อนรัน loader
- 
+
 local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
 local LocalPlayer = Players.LocalPlayer
 local httpRequest = (syn and syn.request) or http_request or request or (http and http.request) or (fluxus and fluxus.request)
 print("[Notifier] http function:", httpRequest and "พบ" or "ไม่พบ (executor ไม่รองรับ request)")
- 
+
 local EVENT_EMOJI = {
     ["Sakura Bloom"] = "🌸", ["Thunderstorm"] = "⛈️", ["Blizzard"] = "❄️",
     ["Blood Moon"] = "🌕", ["Aurora"] = "🌌", ["Eclipse"] = "🌑",
     ["Dragon's Wrath"] = "🐉", ["Void Rift"] = "🌀", ["Heaven's Gate"] = "😇",
     ["Shattered Reality"] = "💥",
 }
- 
+
 local DEBUG = false -- เปิดเป็น true ถ้าอยากดู attribute ทั้งหมดใน Discord
 local SAVE_RESOURCE = false -- true = ปิดการเรนเดอร์ 3D + จำกัด FPS ตอนปล่อยเครื่องทิ้งไว้ (หน้าจอจะดำ) ลด CPU/GPU/แรมได้มาก
 local conns = {}
 local lastStarted = -1
 local cfg -- โหลดตอนใช้งานจริงครั้งแรกเท่านั้น
- 
+
 local function getInfo(biomeName)
     if cfg == nil then
         local ok, res = pcall(function()
@@ -35,7 +34,7 @@ local function getInfo(biomeName)
         if d.name == biomeName then return d end
     end
 end
- 
+
 local function send(title, desc, color)
     if not httpRequest then warn("[Notifier] ไม่พบฟังก์ชัน request") return end
     if not WEBHOOK:find("discord.com/api/webhooks") then warn("[Notifier] WEBHOOK ไม่ถูกต้อง") return end
@@ -70,13 +69,13 @@ local function send(title, desc, color)
     end
     end)
 end
- 
+
 local function check()
     local biome = workspace:GetAttribute("Biome")
     local started = workspace:GetAttribute("BiomeStartedAt") or 0
     if not biome or started <= 0 or started == lastStarted then return end
     lastStarted = started
- 
+
     local info = getInfo(biome)
     local attrs = workspace:GetAttributes()
     local summoner = attrs.BiomeSummoner
@@ -112,7 +111,7 @@ local function check()
         who = tostring(summoner)
     end
     local dur = math.floor(workspace:GetAttribute("BiomeDuration") or 300)
- 
+
     local lines = {
         "**ผู้เล่น:** " .. who,
         "**ระยะเวลา:** " .. dur .. " วินาที",
@@ -137,11 +136,11 @@ local function check()
         local hex = (tostring(info.tagColor or "#FF8CC8"):gsub("#", ""))
         color = tonumber(hex, 16) or color
     end
- 
+
     send((EVENT_EMOJI[biome] or "🎲") .. " " .. biome .. " " .. (info and info.title or "เริ่มแล้ว!"),
         table.concat(lines, "\n"), color)
 end
- 
+
 -- ทำงานเฉพาะตอนค่า attribute เปลี่ยน (ไม่มีลูป)
 local function safeCheck()
     local ok, err = pcall(check)
@@ -150,21 +149,21 @@ end
 local function onChange() task.defer(safeCheck) end
 conns[#conns + 1] = workspace:GetAttributeChangedSignal("BiomeStartedAt"):Connect(onChange)
 conns[#conns + 1] = workspace:GetAttributeChangedSignal("Biome"):Connect(onChange)
- 
+
 -- Anti-AFK (เบามาก ทำงานเฉพาะตอนโดน idle)
 conns[#conns + 1] = LocalPlayer.Idled:Connect(function()
     local vu = game:GetService("VirtualUser")
     vu:CaptureController()
     vu:ClickButton2(Vector2.new())
 end)
- 
+
 getgenv().TwoK = function()
     for _, c in ipairs(conns) do c:Disconnect() end
     table.clear(conns)
 end
- 
+
 safeCheck() -- เช็คครั้งเดียวตอนเริ่ม เผื่ออีเว้นกำลังเกิดอยู่
- 
+
 if SAVE_RESOURCE then
     pcall(function() game:GetService("RunService"):Set3dRenderingEnabled(false) end)
     pcall(function() if setfpscap then setfpscap(10) end end)
@@ -176,4 +175,3 @@ if SAVE_RESOURCE then
         oldStop()
     end
 end
- 
